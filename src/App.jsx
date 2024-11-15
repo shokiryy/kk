@@ -1,17 +1,19 @@
 import TechCard from "./compontes/card";
+import { FooterWithLogo } from "./compontes/futer";
 import { ComplexNavbar } from "./compontes/navabar";
 
 export default function App() {
   return (
    <div>
-      <div className="navbar mb-24">
+      <div className="mb-24 navbar">
       <ComplexNavbar/>
       </div>
-       <div className="box flex justify-center gap-10">
+       <div className="flex justify-center gap-10 box">
         <TechCard/>
         <TechCard/>
         <TechCard/>
        </div>
+       <FooterWithLogo/>
    </div>
   );
 }
